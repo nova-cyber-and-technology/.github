@@ -12,7 +12,7 @@ A small team building infrastructure across cybersecurity, Web3, and AI.
 
 ## What we do
 
-NOVA builds infrastructure that doesn't leave gaps — from smart contracts to threat intelligence platforms. We build everything end to end ourselves: contracts, frontend, docs, all of it.
+NOVA builds infrastructure that doesn't leave gaps. From smart contracts to threat intelligence platforms. We build everything end to end ourselves: contracts, frontend, docs, all of it.
 
 ## Products
 
@@ -24,10 +24,10 @@ NOVA builds infrastructure that doesn't leave gaps — from smart contracts to t
 
 ## Stack
 
-`Solidity` `Ethereum` `Base` `TON` — contracts
-`Python` `FastAPI` `Node.js` — backend
-`Docker` `Linux` `Nginx` `Cloudflare` — infrastructure
-`LLM / RAG` `Threat Analysis` — AI
+`Solidity` `Ethereum` `Base` `TON` - contracts
+`Python` `FastAPI` `Node.js` - backend
+`Docker` `Linux` `Nginx` `Cloudflare` - infrastructure
+`LLM / RAG` `Threat Analysis` - AI
 
 ## Reporting a vulnerability
 

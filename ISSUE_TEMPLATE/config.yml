@@ -1,0 +1,18 @@
+blank_issues_enabled: false
+
+contact_links:
+  - name: 📖 Documentation
+    url: https://docs.novatechnology.app
+    about: Read the official documentation before opening an issue.
+
+  - name: 💬 Discord Community
+    url: https://discord.gg/novacont
+    about: Ask questions, discuss ideas, and connect with the community.
+
+  - name: 🔒 Report a Security Vulnerability
+    url: https://github.com/NOVA-Technology/.github/blob/main/SECURITY.md
+    about: Please do NOT report security vulnerabilities publicly. Follow our Security Policy.
+
+  - name: 🌐 Official Website
+    url: https://novatechnology.app
+    about: Visit our official website for products, updates, and company information.

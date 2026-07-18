@@ -4,7 +4,7 @@
 
 A small team building infrastructure across cybersecurity, Web3, and AI.
 
-[Website](https://novatechnology.app) • [Docs](https://docs.novacont.tech) • [Discord](https://discord.gg/novacont)
+[Website](https://novatechnology.app) • [Docs](https://novacont.gitbook.io/nova-docs) • [Discord](https://discord.gg/novacont)
 
 </div>
 

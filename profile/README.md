@@ -16,7 +16,7 @@ NOVA builds infrastructure that doesn't leave gaps. From smart contracts to thre
 
 ## Products
 
-**[NovaCont](https://novatechnology.app)** - Decentralized escrow protocol running on Base. Currently live on Sepolia testnet, mainnet is a few weeks out. Includes dispute resolution and a reputation system.
+**[NovaCont](https://www.novacont.tech/)** - Decentralized escrow protocol running on Base. Currently live on Sepolia testnet, mainnet is a few weeks out. Includes dispute resolution and a reputation system.
 
 **NovaCont Lite** - The TON/Telegram Mini App version of NovaCont, built for fast, low-cost escrow inside messaging platforms.
 

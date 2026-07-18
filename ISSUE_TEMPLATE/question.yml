@@ -1,0 +1,81 @@
+name: "❓ Question"
+description: Ask a question about NOVA projects or request clarification.
+title: "[Question]: "
+labels:
+  - question
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Before submitting
+        Thank you for your interest in NOVA.
+        Before opening a question, please:
+        - Check the project documentation.
+        - Search existing Issues and Discussions.
+        - Review the README and FAQs if available.
+        If your question concerns a security vulnerability, do not create a public Issue.
+        Please follow SECURITY.md instead.
+  - type: dropdown
+    id: project
+    attributes:
+      label: Project
+      description: Which project is your question about?
+      options:
+        - NovaCont
+        - NovaCont Lite
+        - NovaCTI
+        - Organization
+        - Documentation
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: summary
+    attributes:
+      label: Question Summary
+      description: Briefly summarize your question.
+      placeholder: Short description of your question.
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Question Details
+      description: Please provide as much context as possible.
+      placeholder: |
+        Explain what you are trying to achieve,
+        what you have already tried,
+        and what you would like clarification on.
+    validations:
+      required: true
+  - type: textarea
+    id: references
+    attributes:
+      label: Related Information
+      description: Include links to documentation, Issues, discussions, or code snippets if applicable.
+  - type: dropdown
+    id: category
+    attributes:
+      label: Question Type
+      description: Select the category that best describes your question.
+      options:
+        - General Usage
+        - Development
+        - Smart Contracts
+        - Integration
+        - API
+        - Documentation
+        - Other
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: I have searched the documentation before creating this question.
+          required: true
+        - label: I have searched existing Issues and Discussions.
+          required: true
+        - label: This question is not related to a security vulnerability.
+          required: true

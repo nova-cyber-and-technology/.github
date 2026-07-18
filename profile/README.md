@@ -1,5 +1,4 @@
 <div align="center">
-<img src="https://novatechnology.app/assets/logo.png" width="120" alt="NOVA Logo">
 
 # NOVA Cyber & Technology
 
@@ -17,11 +16,11 @@ NOVA builds infrastructure that doesn't leave gaps — from smart contracts to t
 
 ## Products
 
-**[NovaCont](https://novatechnology.app)** — Decentralized escrow protocol running on Base. Currently live on Sepolia testnet, mainnet is a few weeks out. Includes dispute resolution and a reputation system.
+**[NovaCont](https://novatechnology.app)** - Decentralized escrow protocol running on Base. Currently live on Sepolia testnet, mainnet is a few weeks out. Includes dispute resolution and a reputation system.
 
-**NovaCont Lite** — The TON/Telegram Mini App version of NovaCont, built for fast, low-cost escrow inside messaging platforms.
+**NovaCont Lite** - The TON/Telegram Mini App version of NovaCont, built for fast, low-cost escrow inside messaging platforms.
 
-**NovaCTI** — TÜBİTAK-approved, AI-assisted Cyber Threat Intelligence platform. IOC enrichment, MITRE ATT&CK mapping, automated detection rule generation.
+**NovaCTI** - TÜBİTAK-approved, AI-assisted Cyber Threat Intelligence platform. IOC enrichment, MITRE ATT&CK mapping, automated detection rule generation.
 
 ## Stack
 

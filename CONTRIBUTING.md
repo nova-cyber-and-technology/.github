@@ -131,7 +131,9 @@ Before submitting, make sure:
 
 ## Licensing
 
-By submitting a contribution, you agree that it will be licensed under the same license as the repository you're contributing to. Check that repository's `LICENSE` file for details.
+NOVA's smart contract repositories are source-available under the [PolyForm Shield License 1.0.0](./LICENSE.md): you can read, audit, fork for non-competing use, and build on the code, but you can't use it to build or ship a competing product or service.
+
+By submitting a contribution, you agree that it will be licensed under the same terms as the repository you're contributing to. Check that repository's `LICENSE` file for the exact terms, some repositories may use a different license.
 
 ---
 

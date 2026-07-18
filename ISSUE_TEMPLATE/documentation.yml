@@ -1,0 +1,115 @@
+name: "📚 Dokümantasyon (TR)"
+description: Eksik, yanlış ya da anlaşılmaz dokümantasyon bildir.
+title: "[Docs]: "
+labels:
+  - documentation
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## NOVA Dokümantasyonunu Geliştir
+
+        Dokümantasyonumuzu geliştirmemize yardımcı olduğun için teşekkür ederiz.
+
+        Göndermeden önce:
+
+        - Mükerrer olmaması için mevcut Issue'ları ara.
+        - Bilginin dokümantasyonun başka bir yerinde zaten olmadığından emin ol.
+
+  - type: input
+    id: summary
+    attributes:
+      label: Dokümantasyon Özeti
+      description: Dokümantasyon sorununu kısaca tanımla.
+      placeholder: Önerilen iyileştirmenin kısa özeti.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: project
+    attributes:
+      label: Proje
+      description: Bu dokümantasyon hangi projeyle ilgili?
+      options:
+        - NovaCont
+        - NovaCont Lite
+        - NovaCTI
+        - Website
+        - Organization
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: language
+    attributes:
+      label: Dokümantasyon Dili
+      description: Bu, dokümantasyonun hangi dil versiyonuyla ilgili?
+      options:
+        - İngilizce
+        - Türkçe
+        - Rusça
+        - Basitleştirilmiş Çince
+        - İspanyolca
+        - Portekizce (Brezilya)
+        - Korece
+        - Dile özel değil / hepsi için geçerli
+        - Diğer
+    validations:
+      required: true
+
+  - type: input
+    id: page
+    attributes:
+      label: Dokümantasyon Sayfası
+      description: Varsa sayfa başlığını ya da URL'ini ver.
+      placeholder: https://...
+
+  - type: dropdown
+    id: issue_type
+    attributes:
+      label: Dokümantasyon Sorunu
+      options:
+        - Missing documentation
+        - Incorrect information
+        - Outdated content
+        - Typographical error
+        - Poor explanation
+        - Broken link
+        - Missing example
+        - Translation inconsistent with source
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: Açıklama
+      description: Sorunu detaylı şekilde anlat.
+      placeholder: Neyin düzeltilmesi ya da iyileştirilmesi gerektiğini açıkla.
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Önerilen İyileştirme
+      description: Önerdiğin bir düzeltme varsa burada anlat.
+
+  - type: textarea
+    id: references
+    attributes:
+      label: Referanslar
+      description: İlgili linkleri, ekran görüntülerini ya da destekleyici materyali ekle.
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Onay
+      options:
+        - label: Bu raporu oluşturmadan önce mevcut Issue'ları aradım.
+          required: true
+        - label: Bu dokümantasyonun geliştirilebileceğini düşünüyorum.
+          required: truedocumentation.yml

@@ -1,0 +1,153 @@
+name: "🐞 Bug Report"
+description: Report a reproducible bug or unexpected behavior.
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Before submitting
+        Please make sure you have:
+        - Searched existing Issues for duplicates.
+        - Read the project documentation.
+        - Collected enough information to reproduce the problem.
+
+        **If you are reporting a security vulnerability, or a smart contract bug that could put user funds at risk, do NOT create a public Issue.**
+        Please follow the instructions in **SECURITY.md** instead.
+  - type: input
+    id: summary
+    attributes:
+      label: Summary
+      description: Briefly describe the issue.
+      placeholder: A short description of the problem.
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Provide a detailed explanation of the issue.
+      placeholder: Describe what happened and why you believe it is a bug.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to Reproduce
+      description: Explain how we can reproduce the issue.
+      placeholder: |
+        1. Go to...
+        2. Click...
+        3. Execute...
+        4. Observe...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What did you expect to happen?
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behavior
+      description: What actually happened?
+    validations:
+      required: true
+  - type: dropdown
+    id: component
+    attributes:
+      label: Affected Component
+      description: >
+        Select the component where the issue occurs. If this is a Smart
+        Contracts issue involving fund loss, theft, or a logic bypass,
+        stop and report it through SECURITY.md instead.
+      options:
+        - Smart Contracts
+        - NovaCont Lite
+        - NovaCTI
+        - Backend/API
+        - Frontend/UI
+        - Documentation
+        - SDK
+        - CI/CD
+        - Other
+    validations:
+      required: true
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity (your assessment)
+      description: >
+        Your best guess at impact. This helps with triage but isn't final,
+        we'll confirm severity ourselves. Anything you'd call Critical or
+        High on a smart contract should go through SECURITY.md, not here.
+      options:
+        - "Low: cosmetic, minor inconvenience"
+        - "Medium: functional bug, workaround exists"
+        - "High: functional bug, no workaround"
+        - "Critical: data loss, crash, or security-adjacent (consider SECURITY.md instead)"
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: Specify the affected version if known.
+      placeholder: v1.0.0
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Environment
+      options:
+        - Production
+        - Testnet
+        - Local Development
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: environment_details
+    attributes:
+      label: Environment Details
+      description: Provide operating system, browser, wallet, Node.js version, or any other relevant information.
+      placeholder: |
+        OS:
+        Browser:
+        Wallet:
+        Node.js:
+        Other:
+  - type: textarea
+    id: onchain_details
+    attributes:
+      label: On-Chain Details (if applicable)
+      description: For issues involving NovaCont or NovaCont Lite, include the network, contract address, and any relevant transaction hash.
+      placeholder: |
+        Network: (e.g. Base Sepolia, Base Mainnet, TON)
+        Contract address:
+        Transaction hash:
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or Error Messages
+      description: Paste any relevant logs or error messages.
+      render: shell
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots or Additional Context
+      description: Add screenshots or any additional information that may help us understand the issue.
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: I have searched existing Issues before creating this report.
+          required: true
+        - label: I have provided enough information to reproduce the issue.
+          required: true
+        - label: This is not a security vulnerability or fund-affecting smart contract bug. If it were, I would report it according to SECURITY.md.
+          required: true

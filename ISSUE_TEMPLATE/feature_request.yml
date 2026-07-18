@@ -1,0 +1,101 @@
+name: "✨ Feature Request"
+description: Suggest a new feature or improvement for a NOVA project.
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Before submitting
+        Thank you for helping improve NOVA.
+        Before opening a feature request, please:
+        - Search existing Issues to avoid duplicates.
+        - Check the project documentation.
+        - Clearly explain the problem your proposal solves.
+
+        NOVA is built and maintained by a small team, so feature requests are evaluated against the current roadmap and available time. There's no fixed timeline for review or implementation, even for well-received proposals.
+  - type: input
+    id: summary
+    attributes:
+      label: Feature Summary
+      description: Provide a short summary of your proposal.
+      placeholder: Briefly describe your feature request.
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem Statement
+      description: What problem or limitation does this feature solve?
+      placeholder: |
+        Describe the current limitation or pain point.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed Solution
+      description: Describe your proposed solution in as much detail as possible.
+      placeholder: |
+        Explain how you think this feature should work.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: Have you considered any alternative solutions or workarounds?
+      placeholder: |
+        Describe any alternatives you have considered.
+  - type: dropdown
+    id: component
+    attributes:
+      label: Related Component
+      options:
+        - Smart Contracts
+        - NovaCont Lite
+        - NovaCTI
+        - Backend/API
+        - Frontend/UI
+        - Documentation
+        - SDK
+        - CI/CD
+        - Other
+    validations:
+      required: true
+  - type: dropdown
+    id: importance
+    attributes:
+      label: How Much Would This Help You
+      description: Describe your own need, not how urgent you think it should be for us, this helps us understand real impact rather than everyone marking "Critical."
+      options:
+        - "Nice to have: would be a small convenience"
+        - "Helpful: would meaningfully improve my workflow"
+        - "Important: I'm working around its absence right now"
+        - "Blocking: I can't use NovaCont/NovaCTI the way I need to without it"
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Expected Impact
+      description: Who else would benefit from this feature, and how?
+      placeholder: |
+        Explain how this feature improves the project or user experience beyond your own use case.
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Include mockups, references, screenshots, or any other supporting information.
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: I have searched existing Issues before creating this request.
+          required: true
+        - label: I have clearly described the problem this feature addresses.
+          required: true
+        - label: I understand that submitting a feature request does not guarantee implementation or a specific timeline.
+          required: true
